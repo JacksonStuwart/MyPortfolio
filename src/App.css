@@ -263,13 +263,14 @@
     height: 8rem;
     box-shadow: 8px 0 8px rgb(139, 179, 183);
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 #insta,
 #git,
 #in {
-    margin: 2rem
+    margin: 1rem;
 }
 
 a {
@@ -287,6 +288,11 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     letter-spacing: 3px;
+}
+
+#insideFooter1,
+#insideFooter2 {
+    margin: 2rem;
 }
 
 @keyframes slide {
@@ -324,6 +330,7 @@ a:hover {
 
 @media only screen and (max-width: 900px) {
     #ed-about,
+    #footer,
     #skill-interest,
     #hobbies-achieve {
         flex-direction: column;
@@ -341,6 +348,13 @@ a:hover {
     #mail,
     #address {
         padding-top: 1rem;
+    }
+    #insideFooter1 {
+        margin-top: .5rem;
+    }
+    #insideFooter2 {
+        position: absolute;
+        margin-top: 6rem;
     }
 }
 

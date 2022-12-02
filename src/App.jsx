@@ -43,10 +43,12 @@ function App() {
       <Projects />
       <Hobbies />
       <div id='footer'>
+        <div id='insideFooter1'>
         <a href="https://github.com/JacksonStuwart" target="_blank" rel='noreferrer'><FaGithub id='git' size={50} /></a>
         <a href="https://www.instagram.com/stu_art_20/" target="_blank" rel='noreferrer'><FaInstagram size={50} id='insta' /></a>
         <a href="https://www.linkedin.com/in/jackson-stuwart-833076255/" target="_blank" rel='noreferrer'><FaLinkedin size={50} id='in' /></a>
-        <p className='hiddenRight'>Website By @JACKSON STUWART</p>
+        </div>
+       <div id='insideFooter2'><p className='hiddenRight' >Website By @JACKSON STUWART</p></div>
       </div>
     </div>
   );
