@@ -6,7 +6,6 @@ function Projects() {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry)
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
                 } else {
@@ -49,7 +48,7 @@ function Projects() {
                 <h2>REACT APP</h2>
                 <p>
                     This is an android application done using React framework to monitor personal allowance,
-                    To-Do-List, Crypto Calculator and a Password Manager with AES encryption<br />
+                    To-Do-List, Crypto Calculator and a Password Manager with AES encryption .<br />
                     FRAMEWORK - React-Native, Firebase
                     <a href="https://github.com/JacksonStuwart/React-Native-App.git" target="_blank" rel='noreferrer'><h3> GITHUB REPO </h3></a>
 
