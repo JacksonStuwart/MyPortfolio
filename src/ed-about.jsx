@@ -1,23 +1,6 @@
 import './App.css';
-import { useEffect } from 'react';
-
 
 function Edabout() {
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-            } else {
-              entry.target.classList.remove('show');
-            }
-          });
-        });
-        const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
-        const hiddenElementsRight = document.querySelectorAll('.hiddenRight');
-        hiddenElementsLeft.forEach((el) => observer.observe(el));
-        hiddenElementsRight.forEach((el) => observer.observe(el));
-      })
     return (
         <div id='ed-about'>
             <div id="education" className='hiddenLeft'>

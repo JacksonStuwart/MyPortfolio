@@ -3,25 +3,8 @@ import one from './one.jpg'
 import two from './two.JPG'
 import three from './three.jpg'
 import four from './four.JPG'
-import { useEffect } from 'react';
-
 
 function Hobbies() {
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-            } else {
-              entry.target.classList.remove('show');
-            }
-          });
-        });
-        const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
-        const hiddenElementsRight = document.querySelectorAll('.hiddenRight');
-        hiddenElementsLeft.forEach((el) => observer.observe(el));
-        hiddenElementsRight.forEach((el) => observer.observe(el));
-      })
     return (
             <div id="hobbies-achieve">
                 <div id='achievement' className='hiddenLeft'>
