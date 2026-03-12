@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { Copy, Mail, ExternalLink, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
-  const email = "JSTUWART1820@gmail.com";
+  const email = "jstuwart1820@gmail.com";
 
   return (
-    <section id="contact" className="pt-32 pb-0 relative">
+    <section id="contact" className="pt-32 pb-20 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-transparent pointer-events-none" />
-      
+
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -32,7 +32,7 @@ export default function Contact() {
               <Mail size={18} />
               Say Hello
             </a>
-            
+
             <button
               onClick={() => navigator.clipboard.writeText(email)}
               className="px-8 py-4 rounded-full border border-white/10 glass hover:bg-white/10 transition-colors text-white font-medium flex items-center justify-center gap-2 w-full sm:w-auto"
